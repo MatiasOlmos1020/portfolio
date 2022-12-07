@@ -1,4 +1,8 @@
 /********** Template CSS **********/
+body {
+    color: white !important;
+}
+
 :root {
     --primary: rgb(178, 32, 32);
     --secondary: #E93C05;
@@ -15,7 +19,18 @@
     z-index: 99;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
     color: rgb(178, 32, 32) !important;
 }
 
@@ -25,11 +40,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     border-color: rgb(178, 32, 32) !important;
 }
 
-a{
+a {
     color: rgb(178, 32, 32) !important;
 }
 
-.bg-black{
+.bg-black {
     background-color: #000000;
 }
 
@@ -212,7 +227,7 @@ h6,
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -558,15 +573,21 @@ h6,
     color: var(--primary);
 }
 
-.main-slider-img{
+.main-slider-img {
     height: 100vh;
     object-fit: cover;
 }
 
-.color-white{
+@media(max-width:990px) {
+    .main-slider-img {
+        object-position: right !important;
+    }
+}
+
+.color-white {
     color: white !important;
 }
 
-.color-red{
+.color-red {
     color: rgb(178, 32, 32) !important;
 }
